@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="description"></div>
+    <div class="basic">
+        <h4>Basic</h4>
+        <button onclick="getBasicDateFormat('toDateString')">Get Date Format with toDateString()</button>
+        <button onclick="getBasicDateFormat('toISOString')">Get Date Format with toISOString()</button>
+        <button onclick="getBasicDateFormat('toLocaleDateString')">Get Date Format with toLocaleDateString()</button>
+    </div>
+    <div class="custom">
+        <h5>Custom</h5>
+        <button onclick="getCustomDateFormat('concatenation')">String Concatenation</button>
+        <button onclick="getCustomDateFormat('intl')">Intl.DateTimeFormat</button>
+    </div>
+    <div class="timezone">
+        <h4>Timezone</h4>
+        <button onclick="displayTimeZone('getTimeZone')">Get Time zone with getTimeoneOffset()</button>
+        <button onclick="displayTimeZone('toLocaleString')">Get Time zone with toLocaleString()</button>
+    </div>
+    <div class="format-pattern">
+        <h4>Common Date Formatting Patterns</h4>
+        <button onclick="getPatterns('specific')">Specific Date Format</button>
+        <button onclick="getPatterns('time')">Time Format</button>
+    </div>
+</body>
+<script src="./script/index.js"></script>
+</html>
